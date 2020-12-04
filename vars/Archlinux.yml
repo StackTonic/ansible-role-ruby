@@ -1,0 +1,8 @@
+---
+__ruby_packages:
+  - ruby
+  - "{{ ruby_rubygems_package_name }}"
+  - 'base-devel'
+__ruby_build_packages:
+  - 'base-devel'
+

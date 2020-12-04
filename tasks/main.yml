@@ -18,6 +18,10 @@
     - not ruby_install_from_source
     - ansible_os_family == 'Debian'
 
+- include_tasks: setup-Archlinux.yml
+  when:
+    - not ruby_install_from_source
+    - ansible_os_family == 'Archlinux'
 # Install ruby from source when ruby_install_from_source is true.
 - include_tasks: install-from-source.yml
   when: ruby_install_from_source
